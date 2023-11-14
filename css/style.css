@@ -1,0 +1,119 @@
+/*Geral do site*/
+*{
+    box-sizing: border-box;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: bisque;
+}
+
+button{
+    background-color: #FDFDFD;
+    color:#102f5e;
+    border: 2px solid #102f5e;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+
+}
+
+button:hover{
+    background-color: #102f5e;
+    color:#FFF;
+
+}
+
+button:hover > i{
+    color:#FFF;
+}
+
+button i{
+    color:#102f5e;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input {
+    padding: 0.25rem 0.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+/*Todo Header*/
+
+.container{
+    max-width: 450px;
+    margin: 3rem auto;
+    background-color: #FDFDFD;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.todo_header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+/*Todo forms*/
+
+#todo_form, .todo_form_edit{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#todo_form p, .todo_form_edit p{
+   margin-bottom: 0.5rem;
+   font-weight: bold;
+}
+
+.add_control, .edit_control{
+    display: flex;
+}
+
+.add_control input, .edit_control input{
+    margin-right: 0.3rem;
+}
+
+#cancel-edit {
+    margin-top: 1rem;
+}
+
+/*Todo Lista*/
+
+.todo_tarefas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    transition: .3s;
+}
+.todo_tarefas h3{
+    flex: 1;
+    font-size: .9rem;
+}
+.todo_tarefas button{
+    margin-left: .4rem;
+}
+
+.done{
+    background-color: #395169;
+    color: #FFF;
+}
+.done h3{
+    color: #FFF;
+    text-decoration: line-through;
+    font-style: italic;
+}
+

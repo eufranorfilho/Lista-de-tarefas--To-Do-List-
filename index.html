@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <!-- Parte do Css-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Parte da Biblioteca de icones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/script.js" defer></script> 
+</head>
+<body>
+    <div class="container">
+        <header class="todo_header">
+            <h1 class="titulo">
+                To Do List
+            </h1>
+        </header>
+        <form id="todo_form">
+            <p>Adicione sua tarefa abaixo:</p>
+        <div class="add_control">
+                <input type="text" id="input_todo" placeholder="O que você vai fazer?">
+                <button type="submit">
+                <i class="fa-thin fa-plus"></i>
+                </button>
+        </div>
+        </form>
+        <form class="todo_form_edit hide">
+            <p>Edite sua tarefa</p>
+        <div class="edit_control">
+            <input type="text" id ="input_todo_editar" >
+            <button type="submit">
+                <i class="fa-solid fa-check-double"></i>
+            </button>
+        </div>
+        <button id="cancel-edit">Cancelar</button>
+        </form>
+        <div id="todo_tarefas">
+        </div>
+
+    </div>    
+
+
+
+
+  
+</body>
+</html>
